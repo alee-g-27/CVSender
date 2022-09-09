@@ -37,26 +37,26 @@
   
           input{
   
-              width: 20%;
-              height: 70px;
-              border: 1px solid #8e8e8e;
-              border-radius: 50px;
-              font-size: 27px;
-              font-family: "Jost", sans-serif;
-              padding: 2% 1%;
-              text-align: start; 
-              color : #8e8e8e;
+            width: 20%;
+            height: 70px;
+            border: 1px solid #8e8e8e;
+            border-radius: 50px;
+            font-size: 27px;
+            font-family: "Jost", sans-serif;
+            padding: 2% 1%;
+            text-align: start; 
+            color : #8e8e8e;
   
           }
   
           input:focus{
   
-              outline: none;
+            outline: none;
   
           }
 
-          select{
-                     
+        select{
+                    
             width: 20%;
             height: 70px;
             border: 1px solid #8e8e8e;
@@ -67,21 +67,32 @@
             color: #8e8e8e;
 
 
-              option{
-                  font-size: 23px;
+            option{
+                font-size: 23px;
 
-                  &::after{
-                      color: rgb(255, 255, 255);
-                  }
-              }
-    }
+                &::after{
+                    color: rgb(255, 255, 255);
+                }
+            }
+            
+
+        }
   
-  }
+    }
 
 }
 
 .button-element{
 
     @include buttonPreset();
+
+    /*increase the size of the button*/
+    button{
+        
+        width: 20%;
+        height: 70px;
+        font-size: 27px;
+
+    }
 
 }

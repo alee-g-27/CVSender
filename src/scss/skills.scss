@@ -1,0 +1,56 @@
+@import "./preEdit.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+
+  scroll-behavior: smooth;
+  
+}
+
+.top-section{
+
+    @include frstSectPreset();
+
+}
+
+.par-section{
+
+    padding-top: 3%;                
+    padding-bottom: 0;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: normal;
+    font-size: 55px;
+
+}
+
+textarea{  
+  
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+
+  padding: 10px;
+  width: 550px;
+  font-size: 20px;
+  margin: 50px auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(black, .3);
+  border: 0;
+  font-family: "Jost", sans-serif;
+  
+  &:focus{
+
+    border: none;
+    outline: none;
+
+  }
+
+}
+
+.button-element{
+
+    @include buttonPreset();
+
+}
