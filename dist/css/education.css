@@ -63,6 +63,23 @@
 .form-section .form-element select option::after {
   color: rgb(255, 255, 255);
 }
+.form-section textarea {
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+  padding: 10px;
+  width: 550px;
+  font-size: 20px;
+  margin: 50px auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border: 0;
+  font-family: "Jost", sans-serif;
+}
+.form-section textarea:focus {
+  border: none;
+  outline: none;
+}
 .form-section .ongText p {
   font-size: 27px;
   font-family: "Jost", sans-serif;
@@ -159,41 +176,4 @@
 }
 .form-section .button-element .plus p {
   padding: 10px 20px;
-}
-.form-section textarea {
-  display: block;
-  box-sizing: padding-box;
-  overflow: hidden;
-  padding: 10px;
-  width: 550px;
-  font-size: 20px;
-  margin: 50px auto;
-  margin-top: 10px;
-  border-radius: 6px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  border: 0;
-  font-family: "Jost", sans-serif;
-}
-.form-section textarea:focus {
-  border: none;
-  outline: none;
-}
-.form-section .button-element {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-.form-section .button-element button {
-  width: 20%;
-  background-color: #8e8e8e;
-  border: none;
-  border-radius: 50px;
-}
-.form-section .button-element button p {
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  padding: 5% 0;
-  font-family: "Jost", sans-serif;
-}/*# sourceMappingURL=workExperience.css.map */
+}/*# sourceMappingURL=education.css.map */

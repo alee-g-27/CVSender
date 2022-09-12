@@ -85,6 +85,29 @@ $mainColor: #8e8e8e;
 
   }
 
+  textarea{  
+    display: block;
+    box-sizing: padding-box;
+    overflow: hidden;
+  
+    padding: 10px;
+    width: 550px;
+    font-size: 20px;
+    margin: 50px auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(black, .3);
+    border: 0;
+    font-family: "Jost", sans-serif;
+    
+    &:focus{
+  
+      border: none;
+      outline: none;
+      
+    }
+  
+  }
+
   .ongText{
             
     p{
@@ -197,36 +220,6 @@ $mainColor: #8e8e8e;
             
         }
     }
-
-  }
-
-  textarea{  
-    display: block;
-    box-sizing: padding-box;
-    overflow: hidden;
-  
-    padding: 10px;
-    width: 550px;
-    font-size: 20px;
-    margin: 50px auto;
-    margin-top: 10px;
-    border-radius: 6px;
-    box-shadow: 2px 2px 8px rgba(black, .3);
-    border: 0;
-    font-family: "Jost", sans-serif;
-    
-    &:focus{
-  
-      border: none;
-      outline: none;
-      
-    }
-  
-  }
-
-  .button-element{
-
-    @include buttonPreset();
 
   }
 

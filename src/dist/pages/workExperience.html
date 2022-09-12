@@ -302,18 +302,31 @@
 
             <div class="form-element">
 
-                <input placeholder="From" type="text" onfocus="(this.type = 'date')"  id="Birthdate">
+                <input placeholder="From" type="text" onfocus="(this.type = 'date')"  id="fromDate">
 
             </div>
 
-            <div class="form-element">
+            <div class="form-element" style="padding-bottom: 0.4%;">
 
-                <input placeholder="To" type="text" onfocus="(this.type = 'date')"  id="Birthdate">
+                <input placeholder="To" type="text" onfocus="(this.type = 'date')"  id="toDate">
 
             </div>
 
+            <div class="ongText">
 
-            
+                <p>Ongoing</p>
+
+            </div>
+
+            <div class="toggle-container">
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+
             <textarea class='autoExpand' rows='3' data-min-rows='3' 
             placeholder='Write down your main activities and responsabilities...' autofocus></textarea>
 
@@ -322,6 +335,8 @@
             <div class="button-element">
 
                 <button><a href=""><p>Save</p></a></button>
+                <button class="plus"><p>+</p></button>              
+
     
             </div>
 
