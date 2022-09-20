@@ -36,46 +36,49 @@
 .form-section .form-element input {
   width: 20%;
   height: 70px;
-  border: 0;
+  border: 1px solid #8e8e8e;
   border-radius: 50px;
   font-size: 27px;
   font-family: "Jost", sans-serif;
   padding: 2% 1%;
   text-align: start;
   color: #8e8e8e;
-  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
 }
-.form-section .form-element input:focus::-moz-placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus::placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus,
-.form-section .form-element textarea:focus,
-.form-section .form-element select:focus {
+.form-section .form-element input:focus {
   outline: none;
-  border: 0;
 }
 .form-section .form-element select {
   width: 20%;
   height: 70px;
-  border: 0;
+  border: 1px solid #8e8e8e;
   border-radius: 50px;
   font-size: 27px;
   font-family: "Jost", sans-serif;
   padding-left: 1%;
   color: #8e8e8e;
-  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
 }
 .form-section .form-element select option {
   font-size: 23px;
 }
 .form-section .form-element select option::after {
   color: rgb(255, 255, 255);
+}
+.form-section textarea {
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+  padding: 10px;
+  width: 550px;
+  font-size: 20px;
+  margin: 50px auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border: 0;
+  font-family: "Jost", sans-serif;
+}
+.form-section textarea:focus {
+  border: none;
+  outline: none;
 }
 .form-section .ongText p {
   font-size: 27px;
@@ -138,45 +141,26 @@
 .form-section .toggle-container .slider.round:before {
   border-radius: 50%;
 }
-.form-section textarea {
-  display: block;
-  box-sizing: padding-box;
-  overflow: hidden;
-  padding: 10px;
-  width: 550px;
-  font-size: 20px;
-  margin: 50px auto;
-  margin-top: 10px;
-  border-radius: 6px;
-  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
-  border: 0;
-  font-family: "Jost", sans-serif;
-}
-.form-section textarea:focus {
-  border: none;
-  outline: none;
-}
-
-.button-element {
+.form-section .button-element {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
 }
-.button-element button {
+.form-section .button-element button {
   width: 20%;
   background-color: #8e8e8e;
   border: none;
   border-radius: 50px;
 }
-.button-element button p {
+.form-section .button-element button p {
   color: white;
   text-align: center;
   font-size: 40px;
   padding: 5% 0;
   font-family: "Jost", sans-serif;
 }
-.button-element .plus {
+.form-section .button-element .plus {
   font-size: 30px;
   margin-right: 10px;
   color: #ffffff;
@@ -190,6 +174,6 @@
   width: auto;
   margin-left: 18px;
 }
-.button-element .plus p {
+.form-section .button-element .plus p {
   padding: 10px 20px;
-}/*# sourceMappingURL=workExperience.css.map */
+}/*# sourceMappingURL=language.css.map */

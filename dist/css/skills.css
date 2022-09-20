@@ -35,7 +35,7 @@ textarea {
   font-size: 20px;
   margin: 50px auto;
   border-radius: 6px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
   border: 0;
   font-family: "Jost", sans-serif;
 }

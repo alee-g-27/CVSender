@@ -26,6 +26,15 @@
   font-size: 55px;
 }
 
+.section-title p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #8e8e8e;
+  padding-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
 .form-section .form-element {
   display: flex;
   flex-direction: column;
@@ -55,7 +64,6 @@
   color: transparent;
 }
 .form-section .form-element input:focus,
-.form-section .form-element textarea:focus,
 .form-section .form-element select:focus {
   outline: none;
   border: 0;
@@ -77,106 +85,27 @@
 .form-section .form-element select option::after {
   color: rgb(255, 255, 255);
 }
-.form-section .ongText p {
-  font-size: 27px;
-  font-family: "Jost", sans-serif;
-  color: #8e8e8e;
-  padding-top: 2%;
-  text-align: center;
-}
-.form-section .toggle-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2%;
-  /* Rounded sliders */
-}
-.form-section .toggle-container .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 0 auto;
-}
-.form-section .toggle-container .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.form-section .toggle-container .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-}
-.form-section .toggle-container .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-}
-.form-section .toggle-container input:checked + .slider {
-  background-color: #8e8e8e;
-}
-.form-section .toggle-container input:focus + .slider {
-  box-shadow: 0 0 1px #8e8e8e;
-}
-.form-section .toggle-container input:checked + .slider:before {
-  transform: translateX(26px);
-}
-.form-section .toggle-container .slider.round {
-  border-radius: 100px;
-}
-.form-section .toggle-container .slider.round:before {
-  border-radius: 50%;
-}
-.form-section textarea {
-  display: block;
-  box-sizing: padding-box;
-  overflow: hidden;
-  padding: 10px;
-  width: 550px;
-  font-size: 20px;
-  margin: 50px auto;
-  margin-top: 10px;
-  border-radius: 6px;
-  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
-  border: 0;
-  font-family: "Jost", sans-serif;
-}
-.form-section textarea:focus {
-  border: none;
-  outline: none;
-}
-
-.button-element {
+.form-section .button-element {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+  padding-bottom: 4%;
 }
-.button-element button {
+.form-section .button-element button {
   width: 20%;
   background-color: #8e8e8e;
   border: none;
   border-radius: 50px;
 }
-.button-element button p {
+.form-section .button-element button p {
   color: white;
   text-align: center;
   font-size: 40px;
   padding: 5% 0;
   font-family: "Jost", sans-serif;
 }
-.button-element .plus {
+.form-section .button-element .plus {
   font-size: 30px;
   margin-right: 10px;
   color: #ffffff;
@@ -190,6 +119,9 @@
   width: auto;
   margin-left: 18px;
 }
-.button-element .plus p {
+.form-section .button-element .plus p {
   padding: 10px 20px;
-}/*# sourceMappingURL=workExperience.css.map */
+}
+.form-section .lang-sect {
+  padding-bottom: 5%;
+}/*# sourceMappingURL=languages.css.map */

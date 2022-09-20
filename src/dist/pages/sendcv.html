@@ -1,0 +1,81 @@
+<!--Create a page for creating cv-->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVSender</title>
+    <link rel="stylesheet" href="../../../dist/css/sendcv.css">
+    <link rel="stylesheet" href="../css/preEdit.css">
+
+</head>
+<body>
+
+    <div class="top-section">
+
+        <a href="../../../public/index.html"><img src="../../img/Polygon 1.svg" alt="" class="back-button"></a>
+
+        <h1>Send CV</h1>
+
+    </div>
+        
+    <div class="par-section">
+
+        <p>Fill the fields</p>
+
+    </div>
+
+    <form action="post">
+
+        <div class="form-section">
+
+            <div class="form-element">
+
+                <input type="text" name="Senderemail" id="senderEmail" placeholder="Sender E-mail">
+
+            </div>
+
+            <div class="form-element">
+
+                <input type="text" name="recipientEmail" id="recipientEmail" placeholder="Recipient E-mail">
+
+            </div>
+
+            <div class="form-element">
+
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+
+            </div>
+
+            <textarea class='autoExpand' rows='3' data-min-rows='3' 
+            placeholder='Write down a message...' autofocus></textarea>
+
+
+            <div class="uploadFile">
+
+                <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">Choose a file</label>
+        
+            </div>
+
+
+            <!--Save button-->
+            <div class="button-element">
+
+                <button onclick="sendEmail()"><p>Send</p></button>
+    
+            </div>
+
+
+        </div>
+
+
+    </form>
+
+    
+</body>
+
+<script type="text/javascript" src="../../js/CVcreator/autoExpandTextArea.js"></script>
+
+</html>

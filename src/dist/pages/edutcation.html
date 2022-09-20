@@ -309,7 +309,9 @@
             </div>
 
             <div class="form-element">
+
                 <input type="text" class="form-control" id="website" name="website" placeholder="Website">
+                
             </div>
 
             <div class="form-element">
@@ -342,10 +344,10 @@
 
 
             <!--Save button-->
-            <div class="button-element">
+            <div class="button-element" id="o">
 
                 <button><a href=""><p>Save</p></a></button>  
-                <button class="plus"><p>+</p></button>              
+                <button class="plus" id="plus"><p>+</p></button>              
     
             </div>
 
@@ -356,6 +358,16 @@
 
     
 </body>
+
+<script>
+
+document.getElementById("plus").
+            addEventListener("click", function () {
+         document.getElementById("o").
+            innerHTML += "";
+        });
+
+</script>
 
 <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
 <!-- Include jQuery -->

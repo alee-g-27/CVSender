@@ -36,26 +36,40 @@
 .form-section .form-element input {
   width: 20%;
   height: 70px;
-  border: 1px solid #8e8e8e;
+  border: 0;
   border-radius: 50px;
   font-size: 27px;
   font-family: "Jost", sans-serif;
   padding: 2% 1%;
   text-align: start;
   color: #8e8e8e;
+  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
 }
-.form-section .form-element input:focus {
+.form-section .form-element input:focus::-moz-placeholder {
+  color: transparent;
+}
+.form-section .form-element input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.form-section .form-element input:focus::placeholder {
+  color: transparent;
+}
+.form-section .form-element input:focus,
+.form-section .form-element textarea:focus,
+.form-section .form-element select:focus {
   outline: none;
+  border: 0;
 }
 .form-section .form-element select {
   width: 20%;
   height: 70px;
-  border: 1px solid #8e8e8e;
+  border: 0;
   border-radius: 50px;
   font-size: 27px;
   font-family: "Jost", sans-serif;
   padding-left: 1%;
   color: #8e8e8e;
+  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
 }
 .form-section .form-element select option {
   font-size: 23px;

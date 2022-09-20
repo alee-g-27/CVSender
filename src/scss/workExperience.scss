@@ -41,19 +41,28 @@ $mainColor: #8e8e8e;
 
       width: 20%;
       height: 70px;
-      border: 1px solid #8e8e8e;
+      border: 0;
       border-radius: 50px;
       font-size: 27px;
       font-family: "Jost", sans-serif;
       padding: 2% 1%;
       text-align: start; 
       color : #8e8e8e;
+      box-shadow:  11px 11px 22px #d9d9d9,
+      -11px -11px 22px #ffffff;
+
+      &:focus::placeholder{
+        color: transparent;
+      }
 
     }
 
-    input:focus{
+    input:focus,
+    textarea:focus,
+    select:focus{
 
       outline: none;
+      border: 0;
 
     }
 
@@ -61,12 +70,14 @@ $mainColor: #8e8e8e;
 
       width: 20%;
       height: 70px;
-      border: 1px solid #8e8e8e;
+      border: 0;
       border-radius: 50px;
       font-size: 27px;
       font-family: "Jost", sans-serif;
       padding-left: 1%;
       color: #8e8e8e;
+      box-shadow:  11px 11px 22px #d9d9d9,
+      -11px -11px 22px #ffffff;
 
 
       option{
@@ -172,33 +183,7 @@ $mainColor: #8e8e8e;
 
 
 
-  .button-element{
 
-    @include buttonPreset();
-
-    .plus{
-            
-        font-size: 30px;
-        margin-right: 10px;
-        color: #ffffff;
-        font-family: "Jost", sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 70% !important;
-        width: auto;
-        margin-left: 18px;
-        
-        p{
-            
-            padding: 10px 20px;
-            
-        }
-    }
-
-  }
 
   textarea{  
     display: block;
@@ -211,7 +196,8 @@ $mainColor: #8e8e8e;
     margin: 50px auto;
     margin-top: 10px;
     border-radius: 6px;
-    box-shadow: 2px 2px 8px rgba(black, .3);
+    box-shadow: 11px 11px 22px #d9d9d9,
+    -11px -11px 22px #ffffff;
     border: 0;
     font-family: "Jost", sans-serif;
     
@@ -224,10 +210,32 @@ $mainColor: #8e8e8e;
   
   }
 
-  .button-element{
+}
 
-    @include buttonPreset();
+.button-element{
 
+  @include buttonPreset();
+
+  .plus{
+          
+      font-size: 30px;
+      margin-right: 10px;
+      color: #ffffff;
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 70% !important;
+      width: auto;
+      margin-left: 18px;
+      
+      p{
+          
+          padding: 10px 20px;
+          
+      }
   }
 
 }

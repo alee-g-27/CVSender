@@ -45,36 +45,8 @@
   color: #8e8e8e;
   box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
 }
-.form-section .form-element input:focus::-moz-placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus::placeholder {
-  color: transparent;
-}
-.form-section .form-element input:focus,
-.form-section .form-element select:focus {
+.form-section .form-element input:focus {
   outline: none;
-  border: 0;
-}
-.form-section .form-element select {
-  width: 20%;
-  height: 70px;
-  border: 0;
-  border-radius: 50px;
-  font-size: 27px;
-  font-family: "Jost", sans-serif;
-  padding-left: 1%;
-  color: #8e8e8e;
-  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
-}
-.form-section .form-element select option {
-  font-size: 23px;
-}
-.form-section .form-element select option::after {
-  color: rgb(255, 255, 255);
 }
 
 .button-element {
@@ -95,4 +67,59 @@
   font-size: 40px;
   padding: 5% 0;
   font-family: "Jost", sans-serif;
-}/*# sourceMappingURL=personalInfo.css.map */
+}
+
+textarea {
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 0;
+  width: 550px;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 2%;
+  border-radius: 6px;
+  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
+  border: 0;
+  font-family: "Jost", sans-serif;
+}
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.uploadFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uploadFile .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.uploadFile .inputfile + label {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: white;
+  background-color: #8e8e8e;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: auto;
+  margin-bottom: 5%;
+  font-family: "Jost", sans-serif;
+}
+.uploadFile .inputfile + label:hover {
+  background-color: #8e8e8e;
+}
+.uploadFile .inputfile:focus + label, .uploadFile .inputfile + label:hover {
+  background-color: #646464;
+}/*# sourceMappingURL=sendcv.css.map */
